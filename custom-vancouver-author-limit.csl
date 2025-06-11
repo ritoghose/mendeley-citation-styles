@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text">
   <info>
-    <title>Custom Vancouver (10 authors, ellipsis, DOI, full title)</title>
-    <id>http://www.zotero.org/styles/custom-vancouver-author-limit</id>
+    <title>Custom Vancouver with 10 authors, ellipsis, DOI, full title (Mendeley compatible)</title>
+    <id>http://www.zotero.org/styles/custom-vancouver-author-limit-mendeley</id>
     <link href="http://www.zotero.org/styles/vancouver" rel="self"/>
     <author>
       <name>ChatGPT</name>
     </author>
     <updated>2025-06-11T00:00:00+00:00</updated>
     <category citation-format="numeric"/>
-    <summary>Vancouver style with full authors (up to 10), ellipsis after 10, full title, journal abbreviation, DOI with period.</summary>
+    <summary>Vancouver style with full authors (up to 10), ellipsis after 10, full title, journal abbreviation, DOI with period. 100% Mendeley compatible.</summary>
   </info>
 
   <macro name="author">
     <names variable="author">
       <name form="long" and="text" delimiter=", "/>
-      <et-al min="11" use-first="10" et-al-substitute="..."/>
+      <et-al min="11" use-first="10" substitute="..."/>
     </names>
-    <text value=". " />
+    <text value=". "/>
   </macro>
 
   <macro name="title">
     <text variable="title" suffix=". "/>
+  </macro>
+
+  <macro name="issued">
+    <date variable="issued">
+      <date-part name="year"/>
+    </date>
+    <text value=". "/>
   </macro>
 
   <macro name="journal">
@@ -31,13 +38,6 @@
       <text variable="page"/>
     </group>
     <text value=", "/>
-  </macro>
-
-  <macro name="issued">
-    <date variable="issued">
-      <date-part name="year"/>
-    </date>
-    <text value=". "/>
   </macro>
 
   <macro name="doi">
@@ -54,7 +54,7 @@
     </layout>
   </citation>
 
-  <bibliography et-al-min="11" et-al-use-first="10" et-al-subsequent-author-substitute="..." delimiter=", ">
+  <bibliography>
     <layout>
       <text variable="citation-number" suffix=". "/>
       <text macro="author"/>
