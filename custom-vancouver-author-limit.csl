@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" initialize-with-hyphen="false" page-range-format="minimal">
   <info>
-    <title>Vancouver</title>
-    <id>http://www.zotero.org/styles/vancouver</id>
-    <link href="http://www.zotero.org/styles/vancouver" rel="self"/>
+    <title>Vancouver EMBO-Adapted</title>
+    <id>http://www.zotero.org/styles/vancouver-embo-adapted</id>
+    <link href="http://www.zotero.org/styles/vancouver-embo-adapted" rel="self"/>
     <link href="http://www.nlm.nih.gov/bsd/uniform_requirements.html" rel="documentation"/>
     <author>
       <name>Michael Berkowitz</name>
@@ -16,9 +16,12 @@
     <contributor>
       <name>Sebastian Karcher</name>
     </contributor>
+    <contributor>
+      <name>Ritobrata Ghose</name>
+    </contributor>
     <category citation-format="numeric"/>
     <category field="medicine"/>
-    <summary>Vancouver style as outlined by International Committee of Medical Journal Editors Uniform Requirements for Manuscripts Submitted to Biomedical Journals: Sample References</summary>
+    <summary>Vancouver EMBO-Adapted style - Modified Vancouver style with custom author display rules: all authors shown for ≤10 authors, first 10 + "..." + last 2 authors for >10 authors</summary>
     <updated>2025-06-11T12:24:12+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
