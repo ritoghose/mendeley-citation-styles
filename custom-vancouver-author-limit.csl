@@ -6,18 +6,18 @@
     <link href="http://www.zotero.org/styles/vancouver-embo-adapted" rel="self"/>
     <link href="http://www.nlm.nih.gov/bsd/uniform_requirements.html" rel="documentation"/>
     <author>
-      <name>Michael Berkowitz</name>
+      <n>Michael Berkowitz</n>
       <email>mberkowi@gmu.edu</email>
     </author>
     <contributor>
-      <name>Sean Takats</name>
+      <n>Sean Takats</n>
       <email>stakats@gmu.edu</email>
     </contributor>
     <contributor>
-      <name>Sebastian Karcher</name>
+      <n>Sebastian Karcher</n>
     </contributor>
     <contributor>
-      <name>Ritobrata Ghose</name>
+      <n>Ritobrata Ghose</n>
     </contributor>
     <category citation-format="numeric"/>
     <category field="medicine"/>
@@ -51,7 +51,7 @@
   </locale>
   <macro name="author">
     <names variable="author">
-      <name sort-separator=" " initialize-with="" name-as-sort-order="all" delimiter=", " delimiter-precedes-last="always"/>
+      <name sort-separator=" " initialize-with="" name-as-sort-order="all" delimiter=", " delimiter-precedes-last="always" et-al-min="11" et-al-use-first="10" et-al-use-last="2"/>
       <label form="long" prefix=", "/>
       <substitute>
         <names variable="editor"/>
@@ -323,7 +323,7 @@
       <text variable="citation-number"/>
     </layout>
   </citation>
-  <bibliography et-al-min="11" et-al-use-first="10" et-al-use-last="2" second-field-align="flush">
+  <bibliography second-field-align="flush">
     <layout>
       <text variable="citation-number" suffix="."/>
       <group delimiter=". " suffix=". ">
